@@ -340,13 +340,19 @@ Navbar
   .nav-btn {
     display: none;
   }
-  .nav-links {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    gap: 2rem;
-    justify-self: end;
-  }
+ .nav-links {
+  display: flex;
+  justify-content: space-between; /* or space-around */
+  align-items: center;
+  gap: 2rem;
+  justify-self: end;
+  width: 82%;
+}
+
+.nav-links a {
+  flex: 1;
+  text-align: center;
+}
   .nav-links a {
     text-transform: capitalize;
     color: var(--clr-grey-2);
@@ -357,6 +363,7 @@ Navbar
   }
   .nav-links a:hover {
     color: var(--clr-primary-5);
+    text-decoration: underline;
   }
   .nav-center {
     display: grid;
@@ -429,7 +436,7 @@ Sidebar
   display: grid;
   margin-top: 3rem;
   width: 20rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
 
@@ -1086,16 +1093,4 @@ color:var(--clr-primary-5)
 
 .embed-center_buffy, .footer-buffy {
   background-color:#161A1D;
-}
-
-.embed-center_ted, .footer-ted{
-  background-color:#003E90;
-}
-
-.embed-center_eurovision, .footer-eurovision{
-  background-color:#1b1134;
-}
-
-.embed-center_depeche, .footer-depeche{
-  background-color:#100e0f;
 }

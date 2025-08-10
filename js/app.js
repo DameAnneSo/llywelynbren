@@ -3,6 +3,7 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
