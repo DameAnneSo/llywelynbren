@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curious Data, Anne-Sophie Pereira De Sá's datavisualisation website || Home</title>
+    <meta
+      name="description"
+      content="Welcome to Anne-Sophie Pereira De Sá's website.
+  This website is for me to share my data visualisation work built with different tools (Tableau, Figma, D3, Adobe, Flourish, RawGraph etc.) and techniques (interactivity, mobile responsive, sonification, hand drawn etc.)"
+    />
+    <meta
+      name="keywords"
+      content="data visualisation, datavisualisation, data visualization, datavisualization, dataviz, interactive visualisation, interactive visualization"
+    />
+
+  <!--icons fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <!--fonts: pompiere and montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <!-- /* !!! NEED TO CHANGE THE FAVICON */ -->
+<link rel="icon" type="image/png" href="./images/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+
+  <!-- css -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+
+<body>
+<!-- navbar -->
+<nav class="nav" id="nav">
+<div class="nav-center">
+  <!-- nav header -->
+  <div class="nav-header">
+    <img src="./images/logo.svg" alt="website's logo as 3 dots of colours in shades of pink" class="nav-logo">
+  <button class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+<!-- nav-links -->
+<ul class="nav-links">
+  <li>
+    <a href="index.html"> home</a>
+  </li>
+  <li>
+    <a href="about.html"> About</a>
+  </li>
+  <li>
+    <a href="projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="Blog.html">Blog</a>
+  </li>
+  <li>
+    <a href="Contact.html">Contact</a>
+  </li>
+  </ul>
+</nav>
+      
+
+<!-- sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div>
+    <button class="close-btn" id="close-btn">
+    <i class="fas fa-times"></i>
+    </button>
+    <!-- nav-links -->
+<ul class="sidebar-links">
+  <li>
+    <a href="index.html">home</a>
+  </li>
+  <li>
+    <a href="about.html">about</a>
+  </li>
+  <li>
+    <a href="projects.html">projects</a>
+  </li>
+  <li>
+    <a href="blog.html">blog</a>
+  </li>
+  <li>
+    <a href="contact.html">contact</a>
+  </li>
+  </ul>
+    <!-- social icons  -->
+    <ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="https://www.linkedin.com/in/annesophiepereira/" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://twitter.com/Wonderveilleuze" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://vis.social/@curiousdata" target="_blank" class="social-icon">
+              <i class="fab fa-mastodon"></i>
+            </a>
+          </li>
+        </ul>
+        </aside>  
+    <!-- end of sidebar -->
+
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+        <div class="underline"></div>
+<h1>Hello, I’m Llywelyn</h1>
+<h3>I craft  <span class="headline_visualisation">fine furniture and cabinet-making projects</span>, using traditional techniques.</h3>
+</article> 
+  <article class="hero-img">
+          <img
+        src="images/anneso_photo.png" class="hero-photo home-photo"
+        alt="photo of Anne-Sophie Pereira De Sá smiling, white woman with dark curly hair"
+      />
+        </article>
+        <!-- <a href="#featured" class="scroll-link"> -->
+        <i class="hero-arrow fa-solid fa-arrow-down"></i>
+      <!-- </a> -->
+      </div>  
+        
+    </header>
+    <!-- end of header -->
+
+    <!-- about -->
+<section class="section about" id="featured">
+<div class="section-center about-center" >
+  <!-- about img -->
+<article class="about-img">
+<img src="./images/portfolio_buffy.png" class="about-info home-photo" alt="snippet of a chart from my piece called 6 Reasons to(re)watch Buffy showing an arc diagram that displays all the payoffs and foreshadows in the TV series. The horizontal axis is the time (meaning the progression of the 144 episodes, 7 seasons)  and each arc is a payoff (if above the line) or a foreshadow (if below) the horizontal line">
+</article>
+<!-- about info -->
+<article class="about-info">
+  <!-- section title -->
+<div class="section-title about-title">
+    <h2>Why Curious Data?</h2>
+    <div class="underline"></div> 
+  </div>
+<!-- end of section title -->
+
+<p class="hero-text"> 
+My head is full of data questions on various topics.
+<br>
+I am passionate about the power of visualising data with appealing designs and in-depth analysis.
+</p>
+
+  <p class="hero-text">
+    Some of the topics I have explored so far:
+    <ul>
+    <li>What makes the musical Hamilton so great?</li>
+    <li> What's the best recipe to win at Eurovision?</li>
+    <li>How can I convince people to watch Buffy?</li>
+    <li>Why is the board game Seven Wonders so intricate?</li>
+    </ul>
+</p>
+<a href="about.html" class="btn">more about me</a>
+
+</article>
+</div> 
+</section>
+<!-- end of about -->
+
+<!-- projects -->
+<section class="portfolio-page-center">
+
+<!-- section title -->
+<div class="section-title">
+    <h1>What I have been up to</h1>
+    <div class="underline"></div> 
+  <!-- end of section title -->
+
+    <p class="projects-text">
+      <ul>
+        <li>'Viz of Day' in Tableau Public three times</li>
+        <li>Long listed in the 'Information is Beautiful Awards' (IIAB) twice (2022)</li> 
+        <li>Top 10 of Tableau's Ironviz Competition in 2021</li>
+        
+  </div>
+
+<div class="section-center projects-center">
+  <!-- single project -->
+  <a href="project_buffy_visualisation.html" target="_blank" class="project-1">
+    <article class="project">
+      <img 
+      src="./images/portfolio_buffy_3.png" 
+      alt="snippet of the Buffy viz showing a network chart of pop culture references inside and outside of Buffy" 
+      class="project-img"
+      />
+      <div class="project-info">
+        <h4>6 reasons to (re)watch Buffy the Vampire Slayer</h4>
+        <p>Tableau Ironviz Top 10 qualifiers (2021)
+          <br>
+          Long listed in the IIAB (2022)</p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+    <!-- single project -->
+  <a href="project_tedlasso_visualisation.html" target="_blank" class="project-2">
+    <article class="project">
+      <img src="./images/portfolio_tedlasso.png" 
+      alt="snapshot of the viz showing the homepage, with a look and feel very similar to the 'believe' poster, a key element in the TV show" 
+      class="project-img"
+      />
+      <div class="project-info">
+      
+        <h4>Ted Lasso and his pop culture references</h4>
+        <p>'Viz of the Day' on Tableau Public (2023)</p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+    <!-- single project -->
+  <a href="https://www.linkedin.com/business/marketing/blog/research-and-insights/be-part-of-the-sustainability-conversation-on-linkedin-and-not-just-on-earth-day" target="_blank" class="project-3">
+    <article class="project">
+      <img src="./images/portfolio_sustainability.png" 
+      alt="snapshot of a dataviz showcasing numbers related to the sustainability conversation on LinkedIn" 
+      class="project-img"
+      />
+      <div class="project-info">
+        <h4>LinkedIn: sustainability conversations</h4>
+        <p>Posted on the LinkedIn Marketing blog</p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+    <!-- single project -->
+  <a href="project_eurovision_juries_visualisation.html" target="_blank" class="project-4">
+    <article class="project">
+      <img src="./images/portfolio_eurovision_juries_2.png" 
+      alt="single project" 
+      class="project-img"
+      />
+      <div class="project-info">
+        <h4>Eurovision: does jury bias lead to victory?</h4>
+        <p>'Viz of the Day' on Tableau Public (2021)
+        <br>Long listed in the IIAB (2022)
+        </p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+      <!-- single project -->
+  <a href="project_depechemode_visualisation.html " target="_blank" class="project-5">
+    <article class="project">
+      <img src="./images/portfolio_depechemode.png" 
+      alt="snapshot showing ratings of the different albums of the electronic band" 
+      class="project-img"
+      />
+      <div class="project-info">
+        <h4>Depeche Mode: an exploration of my devotion</h4>
+        <!-- <p>An analysis of the musical attributes of songs and albums. Viz of the Day</p> -->
+        <p>'Viz of the Day' on Tableau Public (2022)</p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+    <!-- single project -->
+  <a href="https://public.tableau.com/app/profile/anne.sophie5083" target="_blank" class="project-more">
+    <article class="project">
+      <img src="./images/portfolio_other_banner.png" 
+      alt="snippets of other projects including ratings of the Mandalorian or a network chart of the game 7 wonders" 
+      class="project-img project-more"
+      />
+      <div class="project-info">
+        <h4>Want more?</h4>
+        <p>More projects on my Tableau Public profile</p>
+      </div>
+    </article>
+  </a>
+  <!-- end of single project -->
+
+</div>
+</div>
+
+    <!-- end of projects -->
+
+<!-- connect -->
+<section class="connect">
+  <!-- note: I removed controls because I dont want them to be displayed -->
+<video autoplay muted loop class="video-container" poster="./images/portfolio_other_banner.png">
+  <source src="./videos/email_video.mp4" type="video/mp4" />
+  Sorry, your browser does not support embedded videos.
+</video>
+
+<div class="video-banner">
+<!-- section title -->
+<div class="section-title">
+    <h2>Let's get in touch</h2>
+    <div class="underline"></div> 
+  </div>
+  <!-- end of section title -->
+  <p class="video-text">
+If you love data visualisation as much as I do, reach out!
+  </p>
+<a href="contact.html" class="btn"> contact me </a>
+</div>
+</section>
+<!-- end of connect -->
+<!-- footer -->
+<footer class="footer">
+<ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="https://www.linkedin.com/in/annesophiepereira/" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://twitter.com/Wonderveilleuze" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://vis.social/@curiousdata" target="_blank" class="social-icon">
+              <i class="fab fa-mastodon"></i>
+            </a>
+          </li>
+        </ul>
+<p>&copy; <span id="date"></span> Anne-Sophie Pereira De Sá. All rights reserved</p>
+</footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
