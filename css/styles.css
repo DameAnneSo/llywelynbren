@@ -80,9 +80,7 @@ body {
 ul {
   list-style-type: none;
 }
-.reasons {
-  list-style-type:circle;
-}
+
 a {
   text-decoration: none;
   color:var(--clr-primary-2)
@@ -978,59 +976,14 @@ Contact Page
           /* animation-delay: 5s; */
 }
 
-.page-info{
-  text-align:center
-}
-
-/*
-=============== 
-Projects individual Pages
-===============
-*/
-
-.embed-center{
-display:flex;
-justify-content:center;
-/* background:red;
-position:absolute;
-width: 100%;
-height:100%;
-top:0; */
-/* left:0; */
-}
-
-.footer_visualisation{
-  display:grid;
-  place-items:center;
-  height: 12rem;
-  padding-top:1rem; 
-}
-
-.footer_visualisation img{
-  transition: var(--transition);
-  display: block;
+  .page-info {
+  text-align: left;
+  width: 90vw;
   margin: 0 auto;
-}
-
-.footer_visualisation:hover img{
-transform: scale(1.2);
-}
-
-.footer_visualisation:hover a{
-color:var(--clr-primary-5)
-}
-
-.footer_visualisation p{
-  text-transform: capitalize;
-  font-size: 0.80rem;
-}
-
-.footer_visualisation p
-, .footer_visualisation a{
-  color: var(--clr-primary-10);
-  transition: var(--transition);
-}
-
-.embed-center_buffy, .footer-buffy {
-  background-color:#161A1D;
+  max-width: 500px;
+  }
+  @media screen and (min-width: 992px) {
+  .page-info {
+    width: 95vw;
+  }
 }
