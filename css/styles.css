@@ -46,8 +46,8 @@ Variables
   --green-dark: #0f5132;
 
   /* fonts */
-  --ff-primary: "Pompiere", sans-serif;
-  --ff-secondary: "Montserrat", sans-serif;
+  --ff-primary: "Alegreya", sans-serif;
+  --ff-secondary: "Lexend", sans-serif;
 
   /* others */
   --transition: all 0.3s linear;
@@ -57,6 +57,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(22, 36, 64, 0.2);
   --max-width: 1170px;
 }
+
 /*
 =============== 
 Global Styles
@@ -76,9 +77,6 @@ body {
   color: var(--clr-grey-5);
   line-height: 1.5;
   font-size: 0.875rem;
-}
-ul {
-  list-style-type: none;
 }
 
 a {
@@ -102,6 +100,7 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 2.441rem;
@@ -116,6 +115,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
   font-size: 1rem;
+  font-weight: 300;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -164,7 +164,7 @@ p {
 }
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 1rem 0rem 2rem 0rem;
 }
 
 .section-center {
@@ -298,7 +298,7 @@ Navbar
 */
 
 .nav-logo {
-  width: 3.5rem;
+  width: 13rem;
 }
 
 .nav-links {
@@ -306,7 +306,7 @@ Navbar
 }
 
 .nav {
-  height: 5rem;
+  height: 8rem;
   padding: 1rem;
   display: grid;
   -webkit-box-align: center;
@@ -372,7 +372,20 @@ Navbar
     -webkit-box-align: center;
     align-items: center;
   }
+
+  .nav ul {
+  list-style-type: none;
 }
+}
+
+.subheader {
+  font-size: 0.875rem;
+  color: var(--clr-grey-5);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  margin-top: 0.5rem;
+  text-align: center;
+} 
 
 /* fixed navbar */
 
@@ -956,7 +969,7 @@ Blog Page
 ===============
 */
 .single-page {
-  min-height: calc(100vh - 17rem);
+  min-height: calc(100vh - 20rem);
 }
 
 .blog-text h3{
