@@ -299,7 +299,7 @@ Navbar
 */
 
 .nav-logo {
-  width: 13rem;
+  width: 10rem;
 }
 
 .nav-links {
@@ -507,10 +507,11 @@ Hero
 }
 
 .hero-center {
-  min-height: calc(100vh - 5rem);
+  /* min-height: calc(100vh - 5rem); */
   display: grid;
   place-items: center;
   gap: 2rem;
+  margin-top: 7rem;
 }
 
 .hero-info {
