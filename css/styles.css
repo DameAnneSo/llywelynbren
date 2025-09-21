@@ -681,7 +681,7 @@ Projects
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border-radius: var(--radius);
-  height: 18rem;
+  height: 22rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
