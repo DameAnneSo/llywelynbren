@@ -306,7 +306,7 @@ Navbar
 }
 
 .nav {
-  height:8rem;
+  height: 8rem;
   padding: 1rem;
   display: grid;
   -webkit-box-align: center;
@@ -348,7 +348,6 @@ Navbar
     align-items: center;
     gap: 1.5rem;
     justify-self: end;
-    width: 25rem;
   }
 
   .nav-links a {
@@ -380,18 +379,21 @@ Navbar
 }
 
 .subheader {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--clr-grey-5);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   text-align: left;
-  margin-bottom: 0rem;
-
-
+  margin: 0.3rem 0 0 0 ;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--clr-primary-3);
+  font-weight: 700;
+ 
 }
 
 /* fixed navbar */
-
 .navbar-fixed {
   position: fixed;
   top: 0;
@@ -401,6 +403,7 @@ Navbar
   z-index: 2;
   box-shadow: var(--light-shadow);
 }
+
 
 /*
 =============== 
@@ -726,7 +729,6 @@ Projects
 .project-more {
   background-color: var(--clr-primary-9);
 }
-
 
 /*
 =============== 
