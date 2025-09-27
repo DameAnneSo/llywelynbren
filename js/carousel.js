@@ -2,19 +2,19 @@ let slideIndex = 1;
 let autoSlideTimer;
 
 // Initialize carousel
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   showSlides(slideIndex);
   startAutoSlide();
 });
 
 // Manual navigation functions
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
   resetAutoSlide();
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
   resetAutoSlide();
 }
 
@@ -23,12 +23,16 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   let slidesWrapper = document.querySelector(".slides-wrapper");
-  
+
   if (!slidesWrapper || slides.length === 0) return;
 
   // Handle slide index boundaries
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1) { slideIndex = slides.length; }
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
 
   // Calculate transform value for smooth sliding
   let translateX = -((slideIndex - 1) * (100 / slides.length));
@@ -61,14 +65,14 @@ function resetAutoSlide() {
 }
 
 // Pause auto-slide on hover
-document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.slideshow-container');
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".slideshow-container");
   if (carousel) {
-    carousel.addEventListener('mouseenter', function() {
+    carousel.addEventListener("mouseenter", function () {
       clearInterval(autoSlideTimer);
     });
-    
-    carousel.addEventListener('mouseleave', function() {
+
+    carousel.addEventListener("mouseleave", function () {
       startAutoSlide();
     });
   }
