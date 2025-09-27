@@ -48,9 +48,7 @@
               alt="website's logo as a woodcut"
               class="nav-logo"
             />
-            <p class="subheader">
-              Furniture, cabinet making & carpentry
-            </p>
+            <p class="subheader">Furniture, cabinet making & carpentry</p>
           </div>
           <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
@@ -67,11 +65,11 @@
     <a href="projects.html">My work</a>
   </li> -->
             <li>
-              <a href="testimonials.html">testimonials</a>
+              <a href="testimonials.html">why me</a>
             </li>
             <!-- <li>
-    <a href="about.html">About</a>
-  </li> -->
+              <a href="about.html">About</a>
+            </li> -->
             <li>
               <a href="contact.html">Contact</a>
             </li>
@@ -98,8 +96,8 @@
             <a href="testimonials.html">testimonials</a>
           </li>
           <!-- <li>
-    <a href="about.html">about</a>
-  </li> -->
+            <a href="about.html">about</a>
+          </li> -->
           <li>
             <a href="contact.html">contact</a>
           </li>
@@ -134,23 +132,20 @@
     <!-- end of sidebar -->
 
     <!--  main section of the contact page -->
-    <section class="section single-page">
-      <!-- section title -->
-
+    <section class="section-center hero-center">
       <!-- section title -->
       <div class="section-title">
         <h1>Contact me</h1>
         <div class="underline"></div>
-        <!-- end of section title -->
-      </div>
-      <!-- end of section title -->
-      <div class="page-info">
         <p>
           Reach out to discuss your project needs, whether you are looking for
           bespoke furniture, custom cabinetry, or handcrafted woodwork. I am
           open to commissions from private and business clients.
         </p>
-        <!-- <p>Get a quote, book a free design visit or enquire about on sale furniture.</p> -->
+        <!-- end of section title -->
+      </div>
+      <!-- end of section title -->
+      <div class="page-info">
         <div class="contact-row">
           <i class="fa-solid fa-location-dot contact-icon"></i>
           <p>
@@ -175,6 +170,58 @@
         </div>
       </div>
     </section>
+
+    <div class="slideshow-container slideshow-contact">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="./images/slideshow/slideshow6.jpg" />
+        <div class="text">
+          Coffee table in zebrano and oak, with sliding top and storage
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./images/slideshow/slideshow7.jpg" />
+        <div class="text">
+          Shelf sitters engraved with laser cutting techniques
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./images/slideshow/slideshow8.jpg" />
+        <div class="text">Take-apart stool/side table in oak</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 18</div>
+        <img src="./images/slideshow/slideshow9.jpg" />
+        <div class="text">Take-apart stool/side table in oak (taken apart)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 18</div>
+        <img src="./images/slideshow/slideshow10.jpg" />
+        <div class="text">
+          Handmade placemats of assorted offcuts: zebrano, beech, walnut, sapele
+          and cedar
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="slideshow-contact-circle" style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
     <!-- main section of the contact page -->
 
     <!-- footer -->
@@ -209,5 +256,12 @@
       </p>
     </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
+
+<style>
+  .slideshow-contact-circle {
+    margin-bottom: 3rem;
+  }
+</style>
