@@ -387,12 +387,12 @@ Navbar
 
   .nav ul {
     list-style-type: none;
+    font-size: 1.1rem;
   }
 }
 
 .subheader {
   font-size: 0.8rem;
-  color: var(--clr-grey-5);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   text-align: left;
@@ -562,6 +562,11 @@ Hero
   place-items: center;
   gap: 2rem;
   margin-top: 7rem;
+}
+
+.hero-fullscreen {
+  min-height: 100vh;
+  margin-top: 0;
 }
 
 .hero-info {
@@ -857,13 +862,44 @@ Contact Page
 
 .contact-row {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .contact-icon {
   margin-right: 1rem;
-  font-size: 1.5em; /* adjust as needed */
+  font-size: 1.6rem; /* adjust as needed */
 }
 
+.contact-row p {
+  /* margin: 0; */
+  line-height: 1.4;
+  font-size: 1.3rem;
+}
+
+
+.contact-link {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  width: 100%;
+}
+
+.contact-link:hover,
+.contact-link:hover .contact-icon,
+.contact-link:hover p {
+  color: var(--clr-primary-3)
+}
+
+.contact-link .contact-icon {
+  transition: color 0.3s ease;
+}
+
+.contact-link p {
+  transition: color 0.3s ease;
+  margin: 0;
+}
 /*
 ===============
 Testimonials section 
@@ -965,7 +1001,8 @@ Carousel
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--clr-grey-3);
+  opacity: 0.8;
   border-radius: 0 0 10px 10px;
 }
 
@@ -976,17 +1013,18 @@ Carousel
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--clr-grey-3);
+  opacity: 0.7;
   border-radius: 0 0 10px 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 5px;
-  background-color: var(--clr-grey-6);
+  background-color: var(--clr-grey-8);
   border-radius: 50%;
   display: inline-block;
   transition: all 0.3s ease;
@@ -995,8 +1033,12 @@ Carousel
 
 .active,
 .dot:hover {
-  background-color: var(--clr-primary-5);
-  transform: scale(1.2);
+  background-color: var(--clr-primary-4);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
 
 .mySlides img {

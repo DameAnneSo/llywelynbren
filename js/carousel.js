@@ -56,7 +56,7 @@ function autoSlide() {
 }
 
 function startAutoSlide() {
-  autoSlideTimer = setInterval(autoSlide, 4000); // Change every 4 seconds
+  autoSlideTimer = setInterval(autoSlide, 6000); // Change every 6 seconds
 }
 
 function resetAutoSlide() {
