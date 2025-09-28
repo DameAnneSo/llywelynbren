@@ -102,7 +102,6 @@ h1,
 h2,
 h3,
 h4 {
-  /* letter-spacing: var(--spacing); */
   text-transform: capitalize;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -126,7 +125,6 @@ p {
   color: var(--clr-grey-5);
   font-size: 1rem;
   font-weight: 300;
-  /* text-wrap: pretty; */
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -190,12 +188,9 @@ p {
 }
 /* added during recording */
 .underline {
-  width: 5rem;
-  height: 0.25rem;
-  margin-bottom: 1rem;
+  width: 8rem;
+  height: 0.35rem;
   background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .home-photo {
@@ -380,7 +375,6 @@ Navbar
     text-transform: uppercase;
     color: var(--clr-grey-2);
     letter-spacing: var(--spacing);
-    /* font-weight:bold; */
     -webkit-transition: var(--transition);
     transition: var(--transition);
   }
@@ -408,11 +402,8 @@ Navbar
   text-align: left;
   margin: 0.3rem 0 0 0;
   color: var(--clr-primary-3);
-  /* font-weight: 700; */
   line-height: 1.2;
   max-width: 320px;
-  color: var(--clr-primary-1)
-
 }
 
 /* fixed navbar */
@@ -451,7 +442,7 @@ Sidebar
 .show-sidebar {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  transition: --var(transition);
+  transition: var(--transition);
 }
 
 .sidebar-links {
@@ -462,9 +453,8 @@ Sidebar
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
-  color: var(--clr-grey4);
-  transition: --var(transition);
-  letter-spacing: --spacing;
+  color: var(--clr-grey-4);
+  transition: var(--transition);
   display: inline-block;
   margin-bottom: 1.5rem;
 }
@@ -568,7 +558,6 @@ Hero
 }
 
 .hero-center {
-  /* min-height: calc(100vh - 5rem); */
   display: grid;
   place-items: center;
   gap: 2rem;
@@ -882,7 +871,6 @@ Contact Page
 }
 
 .contact-row p {
-  /* margin: 0; */
   line-height: 1.4;
   font-size: 1.3rem;
 }
