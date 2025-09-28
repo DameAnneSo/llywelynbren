@@ -343,28 +343,11 @@ Navbar
 
 .nav-btn {
   background: transparent;
-  border: none;
   border-color: transparent;
   color: var(--clr-primary-3);
   font-size: 2rem;
   cursor: pointer;
   justify-self: right;
-  /* iOS Safari button fixes */
-  -webkit-appearance: none;
-  appearance: none;
-  outline: none;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Touch handling for iOS */
-  touch-action: manipulation;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Ensure visibility on iOS */
-  position: relative;
-  z-index: 100;
 }
 
 @media screen and (min-width: 800px) {
