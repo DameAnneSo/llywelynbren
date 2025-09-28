@@ -36,10 +36,10 @@ Variables
   --clr-grey-8: #bbb2ae;
   --clr-grey-9: #d9d4d2;
   --clr-grey-10: #f7f6f6; */
-  --clr--grey-1:#0d0a0a;
+  --clr--grey-1: #0d0a0a;
   --clr-grey-2: #1a1414;
   --clr-grey-3: #261e1f;
-    /* grey used for paragraphs */
+  /* grey used for paragraphs */
   --clr-grey-4: #332829;
   --clr-grey-5: #403233;
   --clr-grey-6: #665b5c;
@@ -343,11 +343,28 @@ Navbar
 
 .nav-btn {
   background: transparent;
+  border: none;
   border-color: transparent;
   color: var(--clr-primary-3);
   font-size: 2rem;
   cursor: pointer;
   justify-self: right;
+  /* iOS Safari button fixes */
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Touch handling for iOS */
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Ensure visibility on iOS */
+  position: relative;
+  z-index: 100;
 }
 
 @media screen and (min-width: 800px) {
