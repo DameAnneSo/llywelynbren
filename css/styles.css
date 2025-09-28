@@ -191,6 +191,7 @@ p {
   width: 8rem;
   height: 0.35rem;
   background: var(--clr-primary-5);
+  margin: 0 auto;
 }
 
 .home-photo {
@@ -320,7 +321,7 @@ Navbar
   -webkit-transition: var(--transition);
   transition: var(--transition);
   overflow-x: hidden;
-  background-color: var(--clr-grey-9);
+  background-color: var(--clr-primary-9);
 }
 
 .nav-center {
@@ -402,8 +403,8 @@ Navbar
   text-align: left;
   margin: 0.3rem 0 0 0;
   color: var(--clr-primary-3);
-  line-height: 1.2;
-  max-width: 320px;
+  line-height: 0.8;
+  max-width: 1000px;
 }
 
 /* fixed navbar */
@@ -412,7 +413,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--clr-primary-9);
+  background-color: var(--clr-grey-9);
   z-index: 9;
   box-shadow: var(--light-shadow);
 }
