@@ -24,14 +24,14 @@ Variables
   --clr-primary-8: #d7e9d8;
   --clr-primary-9: #e8f3e9;
   --clr-primary-10: #fafcfb;
-  
+
   /* darkest grey - used for headings */
   --clr-grey-1: #171210;
   --clr-grey-2: #2a211c;
   --clr-grey-3: #3c3029;
-  --clr-grey-4: #4f3e35; 
+  --clr-grey-4: #4f3e35;
 
- --clr-grey-5: #614d42;
+  --clr-grey-5: #614d42;
   --clr-grey-6: #7f6f66;
   --clr-grey-7: #9d918a;
   --clr-grey-8: #bbb2ae;
@@ -1044,9 +1044,29 @@ Carousel
 
 .mySlides img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  /* Prevent layout shifts during loading */
+  min-height: 300px;
+  background-color: var(--clr-grey-9);
+}
+
+/* Improve carousel container stability */
+.slideshow-container {
+  /* Reserve space to prevent shifts */
+  min-height: 300px;
+}
+
+/* Prevent layout shifts in project images */
+.project-img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  background-color: var(--clr-grey-9);
 }
 
 .slideshow-contact-circle {
