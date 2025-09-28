@@ -104,7 +104,7 @@ h3,
 h4 {
   /* letter-spacing: var(--spacing); */
   text-transform: capitalize;
-  line-height: 1.75;
+  line-height: 1.2;
   margin-bottom: 1rem;
   font-family: var(--ff-primary);
 }
@@ -343,11 +343,21 @@ Navbar
 
 .nav-btn {
   background: transparent;
+  border: none;
   border-color: transparent;
   color: var(--clr-primary-3);
   font-size: 2rem;
   cursor: pointer;
   justify-self: right;
+  /* iOS Safari fixes */
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 8px;
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -392,16 +402,17 @@ Navbar
 }
 
 .subheader {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  /* text-transform: uppercase; */
   letter-spacing: var(--spacing);
   text-align: left;
   margin: 0.3rem 0 0 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: var(--clr-primary-3);
-  font-weight: 700;
+  /* font-weight: 700; */
+  line-height: 1.2;
+  max-width: 320px;
+  color: var(--clr-primary-1)
+
 }
 
 /* fixed navbar */
@@ -876,7 +887,6 @@ Contact Page
   font-size: 1.3rem;
 }
 
-
 .contact-link {
   display: flex;
   align-items: flex-start;
@@ -889,7 +899,7 @@ Contact Page
 .contact-link:hover,
 .contact-link:hover .contact-icon,
 .contact-link:hover p {
-  color: var(--clr-primary-3)
+  color: var(--clr-primary-3);
 }
 
 .contact-link .contact-icon {
