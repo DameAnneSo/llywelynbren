@@ -1073,12 +1073,13 @@ Carousel
 
 /* Prevent layout shifts in project images */
 .project-img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 4;
   object-fit: cover;
   width: 100%;
   height: auto;
   min-height: 200px;
   background-color: var(--clr-grey-9);
+
 }
 
 .slideshow-contact-circle {
